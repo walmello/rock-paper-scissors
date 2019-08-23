@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin: 50px;
+    text-transform: uppercase;
+}
+
+#game {
+    background-color: #ddd;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#player , #pc{
+    margin: 20px;
+}
+
+#player {
+  float: left;
+}
+
+#pc {
+  float: right;
+}
+
+#result {
+  clear: both;
+  text-align: center;
+  padding: 20px;
+}
+
+#wins {
+  float: left;
+}
+
+#loses {
+  float: right;
+}
+
+#wins span, #loses span {
+  font-size: 100px;
+}
