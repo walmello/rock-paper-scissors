@@ -1,24 +1,24 @@
-function computerPlay(){
+function computerPlay(consoleMode = false){
     let random = Math.floor(Math.random() * 3)
     let choice = ['rock','paper','scissors'][random]
     
-    alert(`ì choose ${choice}`)
+    if(consoleMode) alert(`ì choose ${choice}`)
     return choice
 }
 
-function playRound(player, computer){
+function playRound(player, computer, consoleMode=false){
  if(player == "rock"){
   switch(computer){
     case 'scissors':
-      alert('rock beats scissors so you won')
+      if(consoleMode) alert('rock beats scissors so you won')
       return "win"
       break
     case 'paper':
-      alert('paper beats rock so i won')
+      if(consoleMode) alert('paper beats rock so i won')
       return "lose"
       break
     default:
-      alert('we tie')
+      if(consoleMode) alert('we tie')
       return "tie"
   }
 }
@@ -26,31 +26,31 @@ function playRound(player, computer){
  else if(player == "paper"){
   switch(computer){
     case 'rock':
-      alert('paper beats rock so you won')
+      if(consoleMode) alert('paper beats rock so you won')
       return "win"
       break
     case 'scissors':
-      alert('scissors beats paper so i won')
+      if(consoleMode) alert('scissors beats paper so i won')
       return "lose"
       break
     default:
-      alert('we tie')
+      if(consoleMode) alert('we tie')
       return "tie"
   }
 }
 
-else if(player == "scissors"){
+ else if(player == "scissors"){
   switch(computer){
     case 'paper':
-      alert('scissors beats paper so you won')
+      if(consoleMode) alert('scissors beats paper so you won')
       return "win"
       break
     case 'rock':
-      alert('rock beats scissors so i won')
+      if(consoleMode) alert('rock beats scissors so i won')
       return "lose"
       break
     default:
-      alert('we tie')
+      if(consoleMode) alert('we tie')
       return "tie"
   }
 }
